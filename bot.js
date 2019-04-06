@@ -27,7 +27,7 @@ const sql = require("sqlite");
  const pretty = require('pretty-ms') 
 ,ti={}  
 ,spee={};
- const prefix = "*";
+ const prefix = "¿";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -58,7 +58,7 @@ client.on('ready', () => {
 
 
    client.on('message', message => {
-    const prefix = '*'
+    const prefix = '¿'
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -419,7 +419,7 @@ client.on("guildMemberAdd", member => {
 
 
 client.on('message', message => { 
-	var prefix = "*";
+	var prefix = "¿";
  let args = message.content.split(' ').slice(1);
     if(message.content.startsWith(prefix + 'short')) {
     if(!message.channel.guild) return;  
@@ -478,7 +478,7 @@ if(!args[0]) return message.reply('مرجو كتابة نص الدي تريد');
 
    
    client.on("message", message => {
-  if (message.content === "*avatar") {
+  if (message.content === "¿avatar") {
    const embed = new Discord.RichEmbed()
        .setColor('RANDOM') 
        .setFooter('')
@@ -539,7 +539,7 @@ if (message.content.startsWith(prefix + 'trans')) {
 });
 
   client.on("message", message => {
-      if (message.content === "*ping") {
+      if (message.content === "¿ping") {
       const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField('**Ping:**' , `${Date.now() - message.createdTimestamp}` + ' ms')
@@ -678,13 +678,13 @@ const embed = new Discord.RichEmbed()
 	  
 اوامـــر الادمـــنـــيــــة
 
-⤠ *vb ⥨ لمنع الشخص اللي تمنشنه من دخول الرومات الصوتية
-⤠ *unvb ⥨ عشان تفك البان عنه من الرومات الصوتية
-⤠ *ban ⥨ لتبنيد شخص ما من السيرفر
-⤠ *kick ⥨ لتعطي شخص كيك
-⤠ *clearall ⥨ لمسح 300 رسالة بالشات
-⤠ *clear <numb> ⥨ لمسح عدد الرسائل التي تريدها
-⤠ *mute ⥨ لاعطاء شخص ما ميوت مع تحديد وقت الميوت 
+⤠ ¿vb ⥨ لمنع الشخص اللي تمنشنه من دخول الرومات الصوتية
+⤠ ¿unvb ⥨ عشان تفك البان عنه من الرومات الصوتية
+⤠ ¿ban ⥨ لتبنيد شخص ما من السيرفر
+⤠ ¿kick ⥨ لتعطي شخص كيك
+⤠ ¿clearall ⥨ لمسح 300 رسالة بالشات
+⤠ ¿clear <numb> ⥨ لمسح عدد الرسائل التي تريدها
+⤠ ¿mute ⥨ لاعطاء شخص ما ميوت مع تحديد وقت الميوت 
 ⤠ *mutechannel ⥨ لتقفيل الشات 
 ⤠ *unmutechannel ⥨ لفتح الشات 
 ⤠ *unmute ⥨ لنزع الميوت من الشخص
@@ -692,23 +692,23 @@ const embed = new Discord.RichEmbed()
 ⤠ *showchannel ⥨ لاظهار روم معين 
 ⤠ *ct ⥨ لانشاء روم كتابي مع اختيار الاسم
 ⤠ *cv ⥨ لانشاء روم صوتي مع اختيار الاسم 
-⤠ *v2min ⥨ لانشاء روم صوتي مؤقت لدقيقتين
-⤠ *add.r ⥨ لانشاء رتبة مع تحديد الاسم 
-⤠ *delet ⥨ كـود يحذف الـروم سواء صوتي او كتابي
-⤠ *dc ⥨ لمسح جميع الرومات
-⤠ *dr ⥨ لمسح جميع الرولات
-⤠ *bc ⥨ للبرودكاست 
-⤠ *bcrole ⥨ برودكاست لرتبة معينة 
-⤠ *deletall ⥨ لحذف كل الرومات و الرولات من السيرفر 
-⤠ *color ⥨ لانشاء رتب الوان مع اختيار رقم الرتب اللي تبيه
-⤠ *move all ⥨ سحب جميع الأعضاء لرومك الصوتي
-⤠ *roles ⥨ لعرض رولات السيرفر 
-⤠ *rooms ⥨ لعرض رومات السيرفر 
-⤠ *role @user <rank> ⥨ لاعطاء شخص ما رتبة
-⤠ *roleremove @user <rank> ⥨ لنزع رتبة من شخص ما
-⤠ *role all <rank> ⥨ لاعطاء الجميع رتبة
-⤠ *role humans <rank> ⥨ لاعطاء البشريين رتبة 
-⤠ *role bots <rank> ⥨ لاعطاء البوتات رتبة 
+⤠ ¿v2min ⥨ لانشاء روم صوتي مؤقت لدقيقتين
+⤠ ¿add.r ⥨ لانشاء رتبة مع تحديد الاسم 
+⤠ ¿delet ⥨ كـود يحذف الـروم سواء صوتي او كتابي
+⤠ fdc ⥨ لمسح جميع الرومات
+⤠ fdr ⥨ لمسح جميع الرولات
+⤠ ¿bc ⥨ للبرودكاست 
+⤠ ¿bcrole ⥨ برودكاست لرتبة معينة 
+⤠ ¿deletall ⥨ لحذف كل الرومات و الرولات من السيرفر 
+⤠ ¿color ⥨ لانشاء رتب الوان مع اختيار رقم الرتب اللي تبيه
+⤠ ¿move all ⥨ سحب جميع الأعضاء لرومك الصوتي
+⤠ ¿roles ⥨ لعرض رولات السيرفر 
+⤠ ¿rooms ⥨ لعرض رومات السيرفر 
+⤠ ¿role @user <rank> ⥨ لاعطاء شخص ما رتبة
+⤠ ¿roleremove @user <rank> ⥨ لنزع رتبة من شخص ما
+⤠ ¿role all <rank> ⥨ لاعطاء الجميع رتبة
+⤠ ¿role humans <rank> ⥨ لاعطاء البشريين رتبة 
+⤠ ¿role bots <rank> ⥨ لاعطاء البوتات رتبة 
 
 `)
 
